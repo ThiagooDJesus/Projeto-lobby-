@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte javascript</title>
+    
+
+</head>
+<body>
+   <header> 
+      
+
+<h1>javascript</h1>
+   </header>
+   <nav class="navbar">
+      <a href="index.html">Home</a> |
+       <b>teste javascript</b> |
+      <a href="">placeholder</a> |
+      <a href="">placeholder</a> 
+
+   </nav>
+   <main>
+<h2>Serviço de Atendimento ao Cliente</h2>
+<p>Envie uma mensagem e responderemos logo.</p>
+
+<form id="javascript" action="#" method="post">
+    <!-- O atributo action="#" em um formulário HTML, combinado com o atributo method="post", indica que os dados devem ser enviados para a própria página atual. -->
+
+  <!--<label for="id_nome">teste:</label><br>
+  <input type="text" id="id_nome" name="nome" required><br><br>-->
+
+  <label for="id_telefone">Telefone:</label><br>
+  <input type="text" id="id_telefone" name="telefone" placeholder="(00) 0000-00000" required><br><br>
+  <!--A Expressão Regular: ^\(?\d{2}\)?\s?(\d{4,5})[-.\s]?(\d{4})$
+Pedaço do Regex	Significado	Explicação Detalhada
+^	Início da string	Garante que a correspondência comece no primeiro caractere do texto, não em algum lugar no meio.
+\(?	Abre parênteses opcional	\( escapa o caractere ( (pois ( sozinho tem significado especial em Regex). O ? torna esse caractere opcional (pode aparecer 0 ou 1 vez). Isso acomoda formatos com DDD entre parênteses.
+\d{2}	Exatamente dois dígitos	\d representa qualquer dígito de 0 a 9. {2} significa que devem aparecer exatamente dois dígitos consecutivos (o DDD).
+\)?	Fecha parênteses opcional	\) escapa o caractere ). O ? torna esse caractere opcional.
+\s?	Espaço opcional	\s representa qualquer caractere de espaço em branco (espaço, tabulação, quebra de linha). O ? torna esse espaço opcional. Permite, por exemplo, (11) 9... ou 119....
+(\d{4,5})	Grupo de captura 1	Esta é a primeira parte do número (os primeiros 4 ou 5 dígitos). \d{4,5} requer no mínimo 4 e no máximo 5 dígitos. O par de parênteses externos cria um grupo de captura, que permite extrair essa parte específica do número.
+[-.\s]?	Separador opcional	[] define um conjunto de caracteres. [-.\s] significa "pode ser um hífen, um ponto ou um espaço". O ? torna este separador opcional.
+(\d{4})	Grupo de captura 2	A segunda parte do número. Exige exatamente {4} dígitos. Novamente, os parênteses criam um grupo de captura.
+$	Fim da string	Garante que a correspondência termine no último caractere do texto, sem caracteres extras sobrando no final. essa parte gostaria de por no arquivo javascrpit-->
+
+  <label for="id_cpf">CPF:</label><br>
+  <input type="text" id="id_cpf" name="cpf" placeholder="999.999.999-99" required><br><br>
+
+  <!--<label for="id_mensagem">Mensagem:</label><br>
+  <textarea name="mensagem" id="id_mensagem" required></textarea><br><br>-->
+
+  <input type="submit" value="Enviar">
+</form>
+
+<script src="js/validacao.js"></script>
+   </main> 
+</body>
+</html>
